@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vice Streets - Web Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Vice Streets</h1>
+      <p class="sub">A neon open-city arcade demo inspired by 80s Miami vibes.</p>
+    </header>
+
+    <section class="hud" aria-live="polite">
+      <div><span>Score</span><strong id="score">0</strong></div>
+      <div><span>Health</span><strong id="health">100</strong></div>
+      <div><span>Heat</span><strong id="heat">0</strong></div>
+      <div><span>Time</span><strong id="time">120</strong></div>
+    </section>
+
+    <canvas id="game" width="960" height="540" aria-label="Top-down driving game"></canvas>
+
+    <section class="controls">
+      <p><strong>Controls:</strong> WASD / Arrow keys to drive, Space for handbrake boost.</p>
+      <button id="restart">Restart Run</button>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>

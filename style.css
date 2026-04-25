@@ -1,0 +1,97 @@
+:root {
+  --bg: #0d0f1a;
+  --panel: #14182b;
+  --text: #f5f7ff;
+  --accent: #ff5faf;
+  --cyan: #1de5ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 25% 15%, #1f2250, var(--bg) 42%);
+}
+
+.app {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.sub {
+  margin-top: 6px;
+  opacity: 0.84;
+}
+
+.hud {
+  margin-top: 16px;
+  background: linear-gradient(180deg, #1b2040, var(--panel));
+  border: 1px solid #2a3160;
+  border-radius: 10px;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(90px, 1fr));
+  gap: 10px;
+}
+
+.hud div {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  background: #0d1227;
+  border: 1px solid #232c58;
+  padding: 10px;
+}
+
+.hud span {
+  color: #9aa4da;
+}
+
+.hud strong {
+  color: var(--cyan);
+}
+
+#game {
+  margin-top: 16px;
+  width: 100%;
+  border: 1px solid #2a3160;
+  border-radius: 10px;
+  background: #0d1020;
+  image-rendering: crisp-edges;
+}
+
+.controls {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #4f3b6e;
+  color: #fff;
+  background: linear-gradient(180deg, #ff5faf, #d94f95);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  filter: brightness(1.05);
+}
